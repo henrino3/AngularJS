@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="mrPredict">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Mr Predict</title>
+
+   <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+  </head>
+
+  <body ng-controller="AppController">
+    <header>
+        <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ><h3><img src="img/logo1.jpg" width="20px">   mrPredict.com</h3></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="#/about">About Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+
+    </header>
+    {{filteredDate}}
+
+    <section class='container' ng-view>
+      
+
+    </section>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </body>
+
+<!-- 
+  http://mrpredict.com:2082/cpsess9135321398/frontend/paper_lantern/filemanager/index.html?dirselect=webroot&domainselect=mrpredict.com&dir=%2Fhome%2Fmrpredic%2Fpublic_html -->
+</html>
